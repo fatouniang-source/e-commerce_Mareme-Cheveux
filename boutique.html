@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boutique - Marème Cheveux</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+<!-- Header -->
+
+<header>
+
+    <nav>
+
+        <div class="logo">Marème Cheveux</div>
+
+        <ul class="menu">
+
+            <li><a href="index.html">Accueil</a></li>
+
+            <li><a href="boutique.html">Boutique</a></li>
+
+            <li><a href="panier.html" class="panier-menu">Panier 🛒<span id="panier-count">0</span></a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+            <li><a href="apropos.html">À propos</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- Recherche et filtre -->
+
+<div class="recherche">
+
+    <input type="text" id="search-input" placeholder="Rechercher un produit...">
+
+</div>
+
+
+
+<div class="filtre">
+
+    <button class="filtre-btn" data-categorie="tout">Tous</button>
+
+    <button class="filtre-btn" data-categorie="perruques">Perruques</button>
+
+    <button class="filtre-btn" data-categorie="produits-cheveux">Produits cheveux</button>
+
+    <button class="filtre-btn" data-categorie="parfums">Parfums</button>
+
+    <button class="filtre-btn" data-categorie="sacs">Sacs</button>
+
+    <button class="filtre-btn" data-categorie="chaussures">Chaussures</button>
+
+</div>
+
+
+
+<div class="tri">
+
+    <label for="tri-select">Trier par :</label>
+
+    <select id="tri-select">
+
+        <option value="default">Par défaut</option>
+
+        <option value="prix-asc">Prix croissant</option>
+
+        <option value="prix-desc">Prix décroissant</option>
+
+        <option value="nom-asc">Nom A → Z</option>
+
+        <option value="nom-desc">Nom Z → A</option>
+
+    </select>
+
+</div>
+
+
+
+<!-- Liste des produits -->
+
+<div class="produits-list">
+
+    <div class="produit" data-categorie="perruques">
+
+        <span class="badge nouveaute">Nouveau</span>
+
+        <img src="images/perruque1.jpg" alt="Perruque élégante">
+
+        <h3>Raid 16</h3>
+
+        <p>22000f</p>
+
+        <button class="ajouter-panier" data-nom="Red 16" data-prix="22000">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="parfums">
+
+        <span class="badge promo">Promo</span>
+
+        <img src="images/love me maron.jpg" alt="Parfum floral">
+
+        <h3>love me marron</h3>
+
+        <p>1000f</p>
+
+        <button class="ajouter-panier" data-nom="love me marron" data-prix="1000">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="perruques">
+
+        <img src="images/redd14.jpg" alt="Shampoing nourrissant">
+
+        <h3>Raid 14</h3>
+
+        <p>18000f</p>
+
+        <button class="ajouter-panier" data-nom="Red 14" data-prix="18000">Ajouter au panier</button>
+
+    </div>
+
+
+    <div class="produit" data-categorie="sacs">
+
+        <img src="images/sac dior bleue.jpg" alt="Shampoing nourrissant">
+
+        <h3>Sac Dior bleu</h3>
+
+        <p>6500f</p>
+
+        <button class="ajouter-panier" data-nom="Sac Dior bleu" data-prix="6500">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="perruques">
+
+        <img src="images/frisé 12.jpg" alt="Shampoing nourrissant">
+
+        <h3>Romance 12</h3>
+
+        <p>30000f</p>
+
+        <button class="ajouter-panier" data-nom="Romance 12" data-prix="30000">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="produits-cheveux">
+
+        <img src="images/produit frisé.jpg" alt="Shampoing nourrissant">
+
+        <h3>Produit Frisé</h3>
+
+        <p>2000f</p>
+
+        <button class="ajouter-panier" data-nom="produit frisé" data-prix="2000">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="chaussures">
+
+        <img src="images/ngot.jpg" alt="Shampoing nourrissant">
+
+        <h3>Chaussures</h3>
+
+        <p>2000f</p>
+
+        <button class="ajouter-panier" data-nom="Chaussures" data-prix="2000">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="perruques">
+
+        <img src="images/romance22.jpg" alt="Shampoing nourrissant">
+
+        <h3>Romance 22</h3>
+
+        <p>50000f</p>
+
+        <button class="ajouter-panier" data-nom="Romance 22" data-prix="50000">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="perruques">
+
+        <img src="images/red8.jpg" alt="Shampoing nourrissant">
+
+        <h3>Raid 8</h3>
+
+        <p>13000f</p>
+
+        <button class="ajouter-panier" data-nom="Red 8" data-prix="13000">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="perruques">
+
+        <img src="images/red 10.jpg" alt="Shampoing nourrissant">
+
+        <h3>Raid 10</h3>
+
+        <p>15000f</p>
+
+        <button class="ajouter-panier" data-nom="Red 10" data-prix="15000">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="perruques">
+
+        <img src="images/red 12.jpg" alt="Shampoing nourrissant">
+
+        <h3>Raid 12</h3>
+
+        <p>17000f</p>
+
+        <button class="ajouter-panier" data-nom="Red 12" data-prix="17000">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="produits-cheveux">
+
+        <img src="images/olive.jpg" alt="Shampoing nourrissant">
+
+        <h3>Mousse Olive</h3>
+
+        <p>2000f</p>
+
+        <button class="ajouter-panier" data-nom="Mousse Olive" data-prix="2000">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="perruques">
+
+        <img src="images/red 16.jpg" alt="Shampoing nourrissant">
+
+        <h3>Raid 16</h3>
+
+        <p>21000f</p>
+
+        <button class="ajouter-panier" data-nom="Red 16" data-prix="21000">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="perruques">
+
+        <img src="images/red 18.jpg" alt="Shampoing nourrissant">
+
+        <h3>Raid 18</h3>
+
+        <p>25000f</p>
+
+        <button class="ajouter-panier" data-nom="Raid 18" data-prix="25000">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="produits-cheveux">
+
+        <img src="images/Shampoing.jpg" alt="Shampoing nourrissant">
+
+        <h3>Shampoing nourrissant</h3>
+
+        <p>500f</p>
+
+        <button class="ajouter-panier" data-nom="Shampoing nourrissant" data-prix="500">Ajouter au panier</button>
+
+    </div>
+
+    <div class="produit" data-categorie="perruques">
+
+        <img src="images/red 20.jpg" alt="Shampoing nourrissant">
+
+        <h3>Raid 20</h3>
+
+        <p>28000f</p>
+
+        <button class="ajouter-panier" data-nom="Red 20" data-prix="28000">Ajouter au panier</button>
+
+    </div>
+
+
+    <div class="produit" data-categorie="perruques">
+
+        <img src="images/frisé10.jpg" alt="Shampoing nourrissant">
+
+        <h3>Romance 10</h3>
+
+        <p>27500f</p>
+
+        <button class="ajouter-panier" data-nom="Romance 10" data-prix="27500">Ajouter au panier</button>
+
+    </div>
+
+</div>
+
+
+
+<!-- Notification et Back to top -->
+
+<div id="notification" class="notification"></div>
+
+<button id="back-to-top">⬆</button>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

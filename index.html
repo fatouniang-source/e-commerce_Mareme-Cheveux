@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marème Cheveux</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+    <nav>
+        <div class="logo">Marème Cheveux</div>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li>
+                <a href="panier.html" class="panier-menu">
+                    Panier 🛒 <span id="panier-count">0</span>
+                </a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ===== HERO AVEC IMAGE DE FOND ===== -->
+<section class="hero">
+    <h1>Bienvenue chez <span>Marème Cheveux</span></h1>
+    <p>
+Sublimez votre beauté avec nos perruques haut de gamme, 
+produits capillaires soigneusement sélectionnés, parfums envoûtants, 
+sacs tendance et chaussures élégantes.
+</p>
+<a href="boutique.html" class="hero-btn">Voir la boutique</a>
+</section>
+
+
+<!-- ===== Slider filtre ===== -->
+<div class="slider-filtre">
+    <button class="slider-btn active" data-type="tout">Tous</button>
+    <button class="slider-btn" data-type="nouveaute">Nouveautés</button>
+    <button class="slider-btn" data-type="promo">Promotions</button>
+</div>
+
+<section class="categories">
+    <h2>Découvrez nos produits</h2>
+    <h3>Tout pour sublimer votre allure</h3>
+    <div class="categorie-list">
+ <div class="categorie">
+    <a href="boutique.html?categorie=perruques">
+        <img src="images/perruque1.jpg" alt="Perruques">
+        <h3>Perruques</h3>
+    </a>
+ </div>
+
+ <div class="categorie">
+    <a href="boutique.html?categorie=produits-cheveux">
+        <img src="images/produit.jpg" alt="Produits cheveux">
+        <h3>Produits cheveux</h3>
+    </a>
+ </div>
+
+ <div class="categorie">
+    <a href="boutique.html?categorie=parfums">
+        <img src="images/love me maron.jpg" alt="Parfums">
+        <h3>Parfums</h3>
+    </a>
+ </div>
+
+ <div class="categorie">
+    <a href="boutique.html?categorie=sacs">
+        <img src="images/sac dior bleue.jpg" alt="Sacs">
+        <h3>Sacs</h3>
+    </a>
+ </div>
+
+ <div class="categorie">
+    <a href="boutique.html?categorie=chaussures">
+        <img src="images/ngot.jpg" alt="Chaussures">
+        <h3>Chaussures</h3>
+    </a>
+ </div>
+</div>
+</section>
+
+
+
+
+<!--<section class="categories">
+    <h2>Nos catégories</h2>
+
+    <div class="categorie-list">
+        <div class="categorie">
+            <img src="images/perruque1.jpg" alt="Perruques">
+            <h3>Perruques</h3>
+        </div>
+
+        <div class="categorie">
+            <img src="images/produit.jpg" alt="Produits capillaires">
+            <h3>Produits cheveux</h3>
+        </div>
+
+        <div class="categorie">
+            <img src="images/love me maron.jpg" alt="Parfums">
+            <h3>Parfums</h3>
+        </div>
+
+        <div class="categorie">
+            <img src="images/sac dior bleue.jpg" alt="Sacs">
+            <h3>Sacs</h3>
+        </div>
+
+        <div class="categorie">
+            <img src="images/ngot.jpg" alt="Chaussures">
+            <h3>Chaussures</h3>
+        </div>
+    </div>
+</section>-->
+
+<!-- ===== Slider Produits ===== -->
+<!--<section class="slider-produits">
+    <h2>Produits phares</h2>
+
+    <div class="slider-container">
+
+        <div class="slide-produit" data-type="nouveaute">
+            <img src="images/romance22.jpg" alt="Perruque élégante">
+            <h3>romance 22</h3>
+            <p>50000f</p>
+        </div>
+
+        <div class="slide-produit" data-type="promo">
+            <img src="images/produit frisé.jpg" alt="Parfum floral">
+            <h3>Produit frisé</h3>
+            <p>2000f</p>
+        </div>
+
+        <div class="slide-produit" data-type="tout">
+            <img src="images/perruque2.jpg" alt="Shampoing nourrissant">
+            <h3>Sac Dior Noir</h3>
+            <p>6500f</p>
+        </div>
+
+        <div class="slide-produit" data-type="tout">
+            <img src="images/red10.jpg" alt="Perruques">
+            <h3>Raid 10</h3>
+            <p>27500f</p>
+        </div>
+
+
+
+    </div>
+</section>-->
+
+<!-- ===== Newsletter ===== -->
+<section class="newsletter">
+    <h2>Inscrivez-vous à notre Newsletter</h2>
+    <p>Recevez nos nouveautés et promotions directement dans votre boîte email !</p>
+
+    <form id="newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Votre email" required>
+        <button type="submit">S’inscrire</button>
+    </form>
+
+    <p id="newsletter-confirmation" style="color:green; margin-top:15px;"></p>
+</section>
+
+<!-- ===== Avis clients ===== -->
+<section class="avis-clients">
+    <h2>Avis de nos clients</h2>
+
+    <div class="avis-container">
+        <div class="avis-slide">
+            <p>“Les perruques de Marème Cheveux sont de très bonne qualité, je les adore !”</p>
+            <h4>- Sophie L.</h4>
+        </div>
+
+        <div class="avis-slide">
+            <p>“Livraison rapide et service client très sympathique.”</p>
+            <h4>- Marie D.</h4>
+        </div>
+
+        <div class="avis-slide">
+            <p>“J’ai acheté plusieurs produits pour mes cheveux et je suis ravie !”</p>
+            <h4>- Claire R.</h4>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Notification ===== -->
+<div id="notification" class="notification"></div>
+
+<!-- ===== Back to top ===== -->
+<button id="back-to-top">⬆</button>
+
+<!-- ===== JS ===== -->
+<script src="script.js"></script>
+
+</body>
+</html>
