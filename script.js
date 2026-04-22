@@ -334,15 +334,3 @@ produitsArray.forEach(produit => produitsContainer.appendChild(produit));
 
 
 
-/* =========================
-MENU MOBILE
-========================= */
-
-const toggleMenu = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".menu");
-
-if (toggleMenu) {
-  toggleMenu.addEventListener("click", () => {
-    menu.classList.toggle("active");
-  });
-}
